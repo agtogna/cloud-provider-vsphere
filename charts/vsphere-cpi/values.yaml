@@ -5,6 +5,7 @@
 global:
   config:
     enabled: false
+    insecureFlag: true
 
 config:
   enabled: false
