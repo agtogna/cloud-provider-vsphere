@@ -14,7 +14,7 @@ data:
     global:
       port: 443
       # set insecure-flag to true if the vCenter uses a self-signed cert
-      insecureFlag: true
+      insecureFlag: {{ .Values.global.config.insecureFlag }}
       # settings for using k8s secret
       secretName: {{ .Values.config.secret.name }}
       secretNamespace: {{ .Release.Namespace }}
